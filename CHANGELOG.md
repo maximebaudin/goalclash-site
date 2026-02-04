@@ -4,10 +4,11 @@ Toutes les modifications notables de GoalClash sont documentées ici.
 
 Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 
-## [Unreleased]
+## [0.1.1] - 2026-02-04
 
-### En cours
-- Intégration du client WebGL sur le site
+### Added
+- Site officiel avec intégration du client WebGL
+- Page changelog
 
 ---
 
