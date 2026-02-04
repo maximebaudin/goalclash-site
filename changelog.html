@@ -22,54 +22,316 @@
     <main class="changelog-page">
         <h1>Changelog</h1>
 
+        <!-- 4 Fevrier 2026 -->
         <div class="changelog-entry">
-            <h2>v0.1.1 <span class="date">4 février 2026</span></h2>
-            <h3>Ajouts</h3>
+            <h2>4 Fevrier 2026</h2>
+            <h3>Features</h3>
             <ul>
-                <li>Site officiel avec intégration du client WebGL</li>
-                <li>Page changelog</li>
+                <li>Add 12 new powers support (server + client)</li>
+                <li>Implement real-time online character selection</li>
+                <li>Add heart visual effect to Attraction power</li>
+                <li>Add homing potion for Scientist power</li>
+                <li>Rework character selection UI for simultaneous 2-player selection</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Add CHARACTER_SELECT support for WebSocket (WebGL)</li>
+                <li>Disable team color tint on player sprites</li>
+                <li>Sync server power physics with client</li>
+                <li>Sync online powers with local implementations</li>
+                <li>Include SELECTING state in GameLoop tick</li>
+                <li>Fix rate limiting bug blocking real-time selection sync</li>
+                <li>Fix online flow: connect before character selection</li>
+                <li>Nerf wind and adjust powerup box spawning</li>
+                <li>Update Boxer power: reduced range and power</li>
+                <li>Update GoalShield power: position at goal entrance</li>
+                <li>Update BlackHole power: spawn at player position</li>
+                <li>Update Police power: brief stop then ball falls</li>
+                <li>Update Didier power: straight-line projectile</li>
+                <li>Rework Ice power: chill instead of freeze</li>
+                <li>Reset all power effects on round reset</li>
+                <li>Rework Magnet power: aura effect, cost increase</li>
             </ul>
         </div>
 
+        <!-- 3 Fevrier 2026 -->
         <div class="changelog-entry">
-            <h2>v0.1.0 <span class="date">4 février 2025</span></h2>
-
-            <h3>Ajouts</h3>
+            <h2>3 Fevrier 2026</h2>
+            <h3>Fixes</h3>
             <ul>
-                <li>Mode multijoueur en ligne</li>
-                <li>20 personnages avec pouvoirs uniques</li>
-                <li>Mode spectateur</li>
-                <li>Système de progression XP/Niveau</li>
-                <li>Authentification anonyme</li>
-                <li>Effets de carte (PowerUp box, vent)</li>
-                <li>Mode local 1 joueur vs IA</li>
-                <li>Mode local 2 joueurs</li>
-            </ul>
-
-            <h3>Personnages</h3>
-            <ul>
-                <li><strong>Classic</strong> - Aucun pouvoir</li>
-                <li><strong>Runner</strong> - Vitesse x2.5</li>
-                <li><strong>Magnet</strong> - Attire la balle</li>
-                <li><strong>Archer</strong> - Flèche qui pousse la balle</li>
-                <li><strong>Didier</strong> - Stun l'adversaire</li>
-                <li><strong>Révolutionnaire</strong> - Bouclier avocat</li>
-                <li><strong>Giant</strong> - Taille x2.2</li>
-                <li><strong>Teleport</strong> - Téléportation vers la balle</li>
-                <li><strong>Swap</strong> - Échange de positions</li>
-                <li><strong>Ghost</strong> - Adversaire invisible</li>
-                <li><strong>Traffic</strong> - Arrête la balle</li>
-                <li><strong>Clock</strong> - Gèle tout</li>
-                <li><strong>Lover</strong> - Attire l'adversaire</li>
-                <li><strong>Cosmos</strong> - Trou noir</li>
-                <li><strong>Guardian</strong> - Bouclier de but</li>
-                <li><strong>Ice</strong> - Ralentit la balle</li>
-                <li><strong>Boxer</strong> - Coup de poing</li>
-                <li><strong>Ninja</strong> - Shurikens</li>
-                <li><strong>Scientist</strong> - Rétrécit l'adversaire</li>
-                <li><strong>Diver</strong> - Harpon tire la balle</li>
+                <li>Fix missing HitboxDebugger methods after revert</li>
+                <li>Revert physics and power-up box changes</li>
+                <li>Update physics constants and add ball speed tuning</li>
             </ul>
         </div>
+
+        <!-- 2 Fevrier 2026 -->
+        <div class="changelog-entry">
+            <h2>2 Fevrier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Add PowerUp box and wind system for online mode</li>
+                <li>Add PowerUp box with wind effect (local mode)</li>
+                <li>Add mana cost markers, balance adjustments</li>
+                <li>Add team color tint to differentiate players</li>
+                <li>Add mobile controls and Google auth client support</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix memory leak: ensure room data cleanup on all exit paths</li>
+                <li>Fix spectator mode idle timeout disconnection</li>
+                <li>Fix goal detection to trigger when entire ball crosses goal post</li>
+                <li>Fix mana cost markers in online mode</li>
+                <li>Fix team tint not working in 2 player mode</li>
+                <li>Fix box spawning during matchmaking lobby</li>
+                <li>Fix wind animation and box hitbox in online mode</li>
+                <li>Fix players moving at start of round</li>
+                <li>Fix ball collision cooldown to be per-player</li>
+                <li>Fix ball tunneling through goal crossbar</li>
+                <li>Fix duplicate game result reporting</li>
+                <li>Fix API server memory leak</li>
+                <li>Sync physics: semicircle collision</li>
+            </ul>
+        </div>
+
+        <!-- 1 Fevrier 2026 -->
+        <div class="changelog-entry">
+            <h2>1 Fevrier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Add Google authentication to API server</li>
+                <li>Add XP/Level UI system</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix arrow keys controlling both players in 2-player mode</li>
+                <li>Fix R2DBC UUID parameter binding</li>
+            </ul>
+        </div>
+
+        <!-- 31 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>31 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Add XP and level system for online matches</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix race condition in GameResultService</li>
+                <li>Handle missing players gracefully</li>
+                <li>Fix R2DBC @Param annotations</li>
+            </ul>
+        </div>
+
+        <!-- 30 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>30 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Add spectator mode for watching live matches</li>
+                <li>Add splash screen during authentication</li>
+                <li>Add CORS support for web builds (itch.io)</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix spectator timeout: use WaitForSecondsRealtime</li>
+                <li>Fix spectator mode for WebGL: add WebSocket support</li>
+                <li>Fix memory leaks: cache JWT key, cleanup expired tokens</li>
+                <li>Reduce R2DBC connection pool size</li>
+            </ul>
+        </div>
+
+        <!-- 29 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>29 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Add player level to online mode matchmaking</li>
+                <li>Add player name/level display in online mode</li>
+                <li>Add Unity client authentication integration</li>
+                <li>Add player endpoints and JWT authentication</li>
+                <li>Add API Server Phase 2: anonymous authentication</li>
+                <li>Add API Server Phase 1: reactive setup with WebFlux + R2DBC</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Add Procfile to limit JVM memory for Railway</li>
+                <li>Fix UUID casting in repositories</li>
+                <li>Fix Spring Boot plugin to create executable JAR</li>
+            </ul>
+        </div>
+
+        <!-- 28 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>28 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Add ball landing feature to local mode</li>
+                <li>Add ball-on-head feature</li>
+                <li>Implement giant, teleport, swap powers on server</li>
+                <li>Add HitboxDebugger and adjust goal hitboxes</li>
+                <li>Add sound effects for online mode</li>
+                <li>Add options menu with volume controls</li>
+                <li>Add terrain assets and improve scene visuals</li>
+                <li>Add custom slime sprites system</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix server ball physics to match client</li>
+                <li>Harmonize server physics to Unity coordinates</li>
+                <li>Fix online mode: ball bounce and character skins</li>
+                <li>Sync server physics with Unity client</li>
+                <li>Adjust ball bounce physics</li>
+            </ul>
+        </div>
+
+        <!-- 27 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>27 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Add Teleport and Swap powers</li>
+                <li>Add Giant power - player grows 1.8x for 4 seconds</li>
+                <li>Add accessories for all characters with preview</li>
+                <li>Improve slime sprite quality with anti-aliasing</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix Giant power: 70 mana, 3 sec duration</li>
+            </ul>
+        </div>
+
+        <!-- 26 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>26 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Add WebSocket support for WebGL builds</li>
+                <li>Add Revolutionnaire power: avocado shield</li>
+                <li>Add Didier power: PDV projectile that stuns</li>
+                <li>Add stun visual effect: rotating stars</li>
+                <li>Add floating particles effect for menu background</li>
+                <li>Add character-specific accessories</li>
+                <li>Add complete crossbar collision physics</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix online goal detection and celebration delay</li>
+                <li>Fix GOAL state freeze</li>
+                <li>Fix crossbar collision blocking goal entry</li>
+                <li>Use wss:// for WebSocket on HTTPS pages</li>
+                <li>Hide mobile controls on desktop/web platforms</li>
+            </ul>
+        </div>
+
+        <!-- 25 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>25 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Add Archer character with Arrow power</li>
+                <li>Implement online powers system (server authoritative)</li>
+                <li>Add character selection before online play</li>
+                <li>Implement realistic goal visuals and physics</li>
+                <li>Add procedural net texture for realistic goal</li>
+                <li>Implement goal celebration delay (1.5s)</li>
+                <li>Add keep-alive ping and opponent disconnect handling</li>
+                <li>Add quit button and center score display</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix goal entrance collision and slow motion</li>
+                <li>Fix blue gap at goal post corner</li>
+                <li>Improve Sprint power and reduce mana drain</li>
+                <li>Add Magnet visual effect</li>
+                <li>Change power key from Shift to Space</li>
+                <li>Fix online score display and countdown flicker</li>
+                <li>Fix online gameplay freeze and opponent left popup</li>
+                <li>Optimize server memory: zero-alloc loop</li>
+            </ul>
+        </div>
+
+        <!-- 24 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>24 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Finalize Mobile Controls (Joystick)</li>
+                <li>Add Font Styles (Bangers/LuckiestGuy)</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Correct offline and online score attribution</li>
+            </ul>
+        </div>
+
+        <!-- 23 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>23 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Scene Setup automation and Fonts integration</li>
+                <li>9-Slice UI integration</li>
+                <li>Online UX improvements - ceiling collision, connection popup</li>
+                <li>Add Railway deployment configuration</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Update client port to Railway's TCP port</li>
+                <li>Fix maven-shade-plugin for fat JAR</li>
+                <li>Improve online physics - ball Y offset</li>
+                <li>Disable local physics when network-controlled</li>
+                <li>Sync physics between client and server</li>
+                <li>Set Fixed Timestep to 60Hz</li>
+            </ul>
+        </div>
+
+        <!-- 22 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>22 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Add OnlineGameController for server sync</li>
+                <li>Add online matchmaking button and NetworkManager</li>
+                <li>Implement complete Game Server with Netty</li>
+                <li>Add generated sprites (slime, ball)</li>
+                <li>Add Audio System and Gameplay Refinements</li>
+                <li>Implement Single Player Mode with AI opponent</li>
+                <li>Add Magnet power and dynamic character grid</li>
+                <li>Add procedural visual effects for Sprint and Magnet</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix game reset issues: reset mana/powers</li>
+            </ul>
+        </div>
+
+        <!-- 20 Janvier 2026 -->
+        <div class="changelog-entry">
+            <h2>20 Janvier 2026</h2>
+            <h3>Features</h3>
+            <ul>
+                <li>Initialize GoalClash project structure</li>
+                <li>Add core gameplay scripts - PhysicsConstants, SlimeController, BallController, GameManager</li>
+                <li>Add SceneSetup editor script for auto scene configuration</li>
+                <li>Add power system with Runner character (Sprint power)</li>
+                <li>Add mana bar system with UI display and regeneration</li>
+                <li>Add character selection system with Classic character</li>
+                <li>Add main menu with JOUER, VESTIAIRE, OPTIONS, QUITTER buttons</li>
+                <li>Add victory screen with winner display and restart button</li>
+                <li>Add score UI display in top corners</li>
+            </ul>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix slime ground position - remove offset for semicircle pivot</li>
+                <li>Change slime sprites to semicircles like original game</li>
+                <li>Fix playerNumber assignment and ball collision references</li>
+                <li>Correct physics coordinate system for Unity (Y+ = up)</li>
+                <li>Use new Input System instead of legacy Input class</li>
+            </ul>
+        </div>
+
     </main>
 
     <footer>
