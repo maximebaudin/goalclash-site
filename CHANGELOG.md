@@ -31,6 +31,10 @@ Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 - Rework Ice power: chill instead of freeze
 - Reset all power effects on round reset
 - Rework Magnet power: aura effect, cost increase
+- Fix player sprite flip in online mode (players now turn when changing direction)
+- Fix P2 ready button in online character selection
+- Fix tree collision in online mode (players can no longer pass through trees)
+- Add tree sway animation in online mode
 
 ---
 
