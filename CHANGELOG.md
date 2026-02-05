@@ -5,6 +5,27 @@ Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 
 ---
 
+## 5 Fevrier 2026
+
+### Features
+- Make harpoon a hybrid projectile/channel power (hold to reel in)
+
+### Fixes
+- Balance: Increase Police (STOP) mana cost to 55 and reduce stop duration to 0.1s
+- Balance: Reduce black hole duration from 4s to 3s and redesign visual
+- Balance: Reduce goal shield duration from 3s to 1s
+- Balance: Reduce ghost invisibility duration from 3s to 1.5s
+- Fix attraction power not moving opponent in online mode
+- Fix ghost power blinking in online mode
+- Fix double tree spawn and player pushback on tree activation
+- Fix tree power online spawn direction and player collision
+- Fix boxer punch having no effect on ball in online mode
+- Fix ball-player collision while punching (boxer)
+- Align online power visuals with offline and mutualize sprite creation
+- Add Procfile to limit Netty memory usage
+
+---
+
 ## 4 Fevrier 2026
 
 ### Features
