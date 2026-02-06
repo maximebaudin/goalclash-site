@@ -28,6 +28,19 @@
     <main class="changelog-page">
         <h1>Changelog</h1>
 
+        <!-- 7 de febrero de 2026 -->
+        <div class="changelog-entry">
+            <h2>7 de febrero de 2026</h2>
+            <h3>Correcciones</h3>
+            <ul>
+                <li>Fix congelamiento unilateral en linea: un jugador podia congelarse varios segundos mientras el otro seguia jugando</li>
+                <li>El servidor ahora siempre envia los mensajes de estado (Netty almacena en buffer en lugar de ignorarlos)</li>
+                <li>Desconexion forzada tras 3s de contrapresion continua (red de seguridad)</li>
+                <li>Aumento del buffer Netty a 128KB para tolerar picos de red (~5.5s de margen)</li>
+                <li>Indicador visual "Mala conexion" / "Conexion perdida" en el cliente</li>
+            </ul>
+        </div>
+
         <!-- 6 de febrero de 2026 (2) -->
         <div class="changelog-entry">
             <h2>6 de febrero de 2026 (2)</h2>

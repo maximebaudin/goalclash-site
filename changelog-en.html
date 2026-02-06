@@ -28,6 +28,19 @@
     <main class="changelog-page">
         <h1>Changelog</h1>
 
+        <!-- February 7, 2026 -->
+        <div class="changelog-entry">
+            <h2>February 7, 2026</h2>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix unilateral freeze in online mode: one player could freeze for several seconds while the other kept playing</li>
+                <li>Server now always sends state messages (Netty buffers internally instead of silently skipping)</li>
+                <li>Force-disconnect after 3s of continuous backpressure (safety net)</li>
+                <li>Increase Netty write buffer to 128KB for better network spike tolerance (~5.5s margin)</li>
+                <li>Add "Bad connection" / "Connection lost" visual indicator on client side</li>
+            </ul>
+        </div>
+
         <!-- February 6, 2026 (2) -->
         <div class="changelog-entry">
             <h2>February 6, 2026 (2)</h2>

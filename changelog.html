@@ -28,6 +28,19 @@
     <main class="changelog-page">
         <h1>Changelog</h1>
 
+        <!-- 7 Fevrier 2026 -->
+        <div class="changelog-entry">
+            <h2>7 Fevrier 2026</h2>
+            <h3>Fixes</h3>
+            <ul>
+                <li>Fix freeze unilateral en ligne : un joueur pouvait se figer plusieurs secondes pendant que l'autre continuait normalement</li>
+                <li>Le serveur envoie desormais toujours les messages d'etat (Netty bufferise en interne au lieu de les ignorer)</li>
+                <li>Deconnexion forcee apres 3s de backpressure continue (filet de securite)</li>
+                <li>Augmentation du buffer Netty (128KB) pour tolerer les pics reseau (~5.5s de marge)</li>
+                <li>Ajout d'un indicateur visuel "Mauvaise connexion" / "Connexion perdue" cote client</li>
+            </ul>
+        </div>
+
         <!-- 6 Fevrier 2026 (2) -->
         <div class="changelog-entry">
             <h2>6 Fevrier 2026 (2)</h2>
