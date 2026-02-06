@@ -5,6 +5,23 @@ Format basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 
 ---
 
+## 6 Fevrier 2026 (2)
+
+### Features
+- Redesign main menu with stadium theme and game mode cards (Training, Online, Ranked)
+- Add bottom navigation bar (Boutique, Ladder, Streaming, Collection)
+- Add FloatingEffect component for bobbing UI animations with phase offset
+- Training card opens play mode popup (1P/2P) as overlay over menu
+
+### Fixes
+- Fix MatchList and StatsPopup displaying over game field instead of menu background
+- Fix StatsPopup not showing on first click
+- Fix MatchListCanvas blocking menu interactions when inactive
+- Remove legacy MenuController (MainMenuUI handles all flow)
+- Simplify level display to just the number
+
+---
+
 ## 5 Fevrier 2026
 
 ### Features
